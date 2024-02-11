@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* for top nav bar */
+.social-media {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 30px;
+    background: #0f0746;
+    color: white;
+}
+
+.contact {
+    width: 50%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.contact li {
+    margin: 0px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact li:hover {
+    cursor: pointer;
+}
+
+.social {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.social li {
+    margin: 0px 5px;
+    font-size: 30px;
+}
+
+.social li:hover {
+    cursor: pointer;
+}
+
+/* section nav */
+
+.section-nav {
+    height: 100px;
+    width: 100%;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #0000003d;
+    font-family: Arial, Helvetica, sans-serif;
+    /* position: sticky; */
+    /* top: 0; */
+}
+
+.startUp {
+    height: 100%;
+    width: 25%;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+}
+
+.home-nav {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.home-nav ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-nav ul li {
+    margin: 0px 15px;
+    font-size: 18px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+}
+
+.home-nav ul li:hover {
+    cursor: pointer;
+    border-bottom: 2px solid blue;
+}
+
+.download-btn {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.download-btn button {
+    height: 50px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(11, 159, 234);
+    transition: all 0.7s;
+    color: white;
+}
+
+.download-btn button:hover {
+    cursor: pointer;
+    color: black;
+}
+
+/* code for front-part */
+.main-part {
+    position: relative;
+    height: 110vh;
+    z-index: -1;
+}
+
+.main-box {
+    position: absolute;
+    height: 110vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* z-index: -1; */
+    color: white;
+    background: #17446e80;
+}
+
+.main-box::before {
+    height: 110vh;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("./image/meeting.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.front-part {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.capital-creative {
+    font-size: 20px;
+}
+
+.small-creative {
+    font-family: cursive;
+    font-size: 70px;
+    margin: 25px 0px;
+}
+
+.digital-solution {
+    font-family: cursive;
+    font-size: 70px;
+    margin: 0px 0px 20px 0px;
+}
+
+.group-btn {
+    margin-top: 30px;
+}
+
+.free-btn {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background: rgb(11, 159, 234);
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+.free-btn:hover {
+    cursor: pointer;
+}
+
+.contact-btn {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+    border: 0.5px solid gray;
+    border-radius: 4px;
+    background: none;
+    color: white;
+    transition: all 0.8s;
+}
+
+.contact-btn:hover {
+    cursor: pointer;
+    background-color: rgba(240, 248, 255, 0.54);
+    color: black;
+}
+
+/* CSS code for three boxes */
+.three-box {
+    height: 150px;
+    width: 90%;
+    margin: -75px auto 0 auto;
+    display: flex;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.196);
+}
+
+.client {
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgb(11, 159, 234);
+}
+
+.client-group {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(11, 159, 234);
+    background: white;
+    font-size: 25px;
+    border-radius: 4px;
+}
+
+.happy-client  {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+    color: white;
+    margin-left: 15px;
+    line-height: 1.2;
+}
+
+.number {
+    font-size: 30px;
+}
+
+.project {
+    height: 100%;
+    width: 33.33%;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color:  rgb(11, 159, 234);
+}
+.tick {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    background:rgb(11, 159, 234) ;
+    font-size: 25px;
+    border-radius: 4px;
+}
+.project-done {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+    color:rgb(11, 159, 234) ;
+    margin-left: 15px;
+    line-height: 1.2;
+}
+
+
+.award {
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgb(11, 159, 234);
+}
+.award-logo {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(11, 159, 234);
+    background: white;
+    font-size: 25px;
+    border-radius: 4px;
+}
+.win {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+    color: white;
+    margin-left: 15px;
+    line-height: 1.2; 
+}
+
+.about-us
+{
+    margin-top: 150px;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+}
+.all-about-us {
+    width: 65%;
+    height: 100%;
+}
+.mini-head  {
+    font-family: cursive;
+    color: rgb(11, 159, 234);
+    font-weight: bold;
+    font-size: 20px;
+}
+.head-2 {
+    font-weight: bold;
+    font-size: 35px;
+    font-family: cursive;
+    margin-top: 20px ;
+}
+.loading {
+    margin-top: 20px;
+    height: 5px;
+    width: 150px;
+    background: rgb(11, 159, 234);
+    border-radius: 5px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+}
+ .load-box{
+    height: 6px;
+    width: 6px;
+    background-color: white;
+    animation: loading 5s  infinite;
+    position: relative;
+}
+@keyframes loading {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        top: 0;
+        left: 145px;
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }
+}
+
+.mini-para 
+{
+    margin-top: 50px;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(91, 81, 81);
+    width: 90%;
+    line-height: 1.5;
+}
+
+.ulandli {
+    display: flex;
+    flex-direction: row;
+    font-family: cursive;
+    color: rgba(0, 0, 0, 0.844);
+}
+.left {
+    width: 50%;
+}
+.left  li {
+font-size: 22px;
+margin: 8px 0px; 
+ } 
+.fa-check {
+    color: rgb(11, 159, 234);
+    margin: 0px 10px;
+    font-weight: bold;
+}
+.right {
+    width: 50%;
+}
+.right  li {
+    font-size: 20px;
+    margin: 8px 0px; 
+     } 
+.contact-num {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.call-btn {
+    height: 50px;
+    width: 50px;
+    background:rgb(11, 159, 234) ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dial-num {
+    margin-left: 20px;
+    font-family: cursive;
+    font-size: 20px;
+}
+.dial-num > :nth-child(2) {
+    color:rgb(11, 159, 234) ;
+    margin-top: 8px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+.request-btn {
+    margin-top: 40px;
+    border: none;
+    border-radius: 2px;
+    background: rgb(11, 159, 234);
+    color: white;
+    height: 50px;
+    width: 200px;
+    font-size: 16px;
+}
+.image-of-us {
+    height: 530px;
+    width: 35%;
+    background: url("./image/meting.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2px;
+}
+/* Why us */
+.why-us {
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
